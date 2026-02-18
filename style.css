@@ -1,0 +1,243 @@
+/* Header and Footer */
+
+header, footer {
+    font-size: 70px;
+    background-color: #accefa;
+    font-family: Copperplate, fantasy;
+    color: #194d91;
+}
+
+header {
+    text-align: right;
+    grid-area: header;
+}
+
+.topNav{
+  align-items: left;
+    color: #194d91;
+    font-size: 30px;
+    font-family: Copperplate, fantasy;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+    font-size: 3rem;
+    grid-area: footer;
+}
+
+.section-head{
+  font-family: Copperplate, fantasy;
+  font-size: 70px;
+  padding: 30px;
+}
+  
+h1{
+    font-size: 1.5rem;
+    color: black;
+}
+
+p{
+    font-size: 1.5rem;
+    color: black;
+}
+
+tbody{
+    font-size: 1.5rem;
+    padding: 40px;
+}
+
+th{
+    font-size: 3rem;
+    padding: 20px;
+}
+
+body {
+  margin: 0;
+  display: grid;
+
+  grid-template-rows: 200px 1fr 175px;
+
+  grid-template-columns: 1fr ;
+
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+
+  height: 100vh;
+}
+
+/*Button Styling*/
+.button {
+  background-color: #194d91;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  width: 175px;
+  height: 25px;
+  border: none; 
+  padding: 15px; 
+  display: inline-block; 
+  line-height: 0px;
+  border-radius: 8px; 
+}
+
+
+/*Body Sections*/
+.news, .times, .championships {
+    font-size: 50px;
+    font-family: Monaco, monospace;
+    color: #194d91;
+}
+
+.news, .times {
+    background-color: rgb(246, 246, 252);
+}
+
+/*Columns for News Section*/
+.flex-container {
+  display: flex; 
+  justify-content: left; 
+  gap: 20px; 
+  padding: 40px;
+  font-size: 50px;
+  font-family: Monaco, monospace;
+  color: #194d91;
+}
+
+.flex-container-champ {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around; 
+  gap: 20px; 
+  padding: 10px;
+  font-size: 50px;
+  font-family: Monaco, monospace;
+  color: #194d91;
+  background-color: #accefa;
+
+}
+
+.box-container-1 {
+  display: flex; 
+  flex-direction: column;
+  gap: 20px; 
+  align-items: left;
+  background-color: white;
+  margin-bottom:40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.grid-container{
+  display: grid;
+}
+
+.image-float-left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.column {
+  flex: 1; 
+  padding: 1rem;
+  box-sizing: border-box; 
+}
+
+
+@media (max-width: 1000px) {
+
+  body {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+  header {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  footer {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Stack flex containers vertically */
+  .flex-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flex-container-champ {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .column {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .section-head {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .news, .times, .championships {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  th {
+    font-size: 2rem;
+  }
+
+  tbody {
+    font-size: 1rem;
+  }
+}
+
+
+/* Phone sized screens*/
+@media (max-width: 600px) {
+
+  header {
+    font-size: 35px;
+  }
+
+  .topNav {
+    font-size: 20px;
+  }
+
+  h1, p {
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    line-height: normal;
+  }
+
+  .box-container-1 {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .flex-container {
+    gap: 10px;
+    padding: 20px;
+  }
+}

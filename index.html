@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swim Central</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <a href="#sectionNews" class="topNav">News</a>
+        <a href="#sectionChamp" class="topNav">Championships</a>
+        <a href="#sectionTimes" class="topNav">Times</a>
+        <img src="images/swimcentrallogo.png" alt="Swim Central Logo" width="300" height="150">
+
+
+    </header>
+
+    <main class = "grid-container">
+        <section class="news">
+            <article class="section-head" id="sectionNews">NEWS</article>
+            <div>
+                <section class="flex-container">
+                    <article class="column">
+                        <img src="images/katieledeckymedal.jpg" alt="Image of Katie Ledecky" width="200" height="200">
+                        <p>Katie Ledecky goes second fastest time ever in the 1500m freestyle.</p>
+                        <button type="button" class="button" onclick = "window.location.href='news.html'">READ MORE</button>
+                    </article>
+                    <article class="column">
+                        <img src="images/proswimseriesday3.jpg" alt="Image of Maxime Grousset" width="200" height="200">
+                        <p>Recap of Day 3 of 2026 Pro Swim Series - Austin</p>
+                        <button type="button" class="button" onclick = "window.location.href='news.html'">READ MORE</button>
+                    </article>
+                    <article class="column">
+                        <img src="images/concorduniversitymountainlion.jpg" alt="Concord University Logo" width="200" height="200">
+                        <p>Concord University (DII) adds Triathalon team. </p>
+                        <button type="button" class="button" onclick = "window.location.href='news.html'" >READ MORE</button>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        
+        <section class="flex-container">
+            <article class="section-head" id="sectionChamp">CHAMPIONSHIPS
+                <img src="images/trophy.png" alt="Trophy Image" height="300" width="250" > 
+            </article>
+            <article class="flex-container-champ">
+                <h1><b>February 12th-16th </b></h1>
+                <p>Landmark  Conference Championships</p>
+                <p> Middle Atlantic Conference</p>
+            </article>
+
+            <article class="flex-container-champ">
+                <h1><b>February 18th-21st</b></h1>
+                <p>American East Conference Championships</p>
+                <p>Atlantic Sun Conference</p>
+            </article>
+
+            <article class = "flex-container-champ">
+                <h1><b>March 18th-21st </b>Women's Division I NCAA Championship</h1>
+                <h1><b> March 25th-28th Men's Division I NCAA Championship</b></h1>
+            </article>
+        </section>
+
+        <section class="times">
+            <article class="section-head" id="sectionTimes">QUALIFYING TIMES</article>
+            <div class = "flex-container" >
+
+                    <select id="event" class="button">Events</select>
+                    <select id="cut" class="button"></select>
+                    <select id="gender" class="button"></select>
+
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Time</th>
+                            <th>Cut</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+    
+
+            <script src="data.js"></script>
+            <script src="script.js"></script>
+        </section>
+</body>
+</html>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <img src="images/swimcentrallogo.png" alt="Swim Central Logo" width="300" height="150">
+        <a href="#header" class="topNav">Back to Top</a>
+    </footer>
+
+</body>
+</html>
