@@ -62,7 +62,7 @@ body {
   margin: 0;
   display: grid;
 
-  grid-template-rows: 200px 1fr 175px;
+  grid-template-rows: 200px 1fr 200px;
 
   grid-template-columns: 1fr ;
 
