@@ -15,7 +15,7 @@
 
 
     </header>
-    
+
     <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5S0HQ45TT"></script>
         <script>
@@ -77,9 +77,9 @@
             <article class="section-head" id="sectionTimes">QUALIFYING TIMES</article>
             <div class = "flex-container" >
 
-                    <select id="event" class="button">Events</select>
-                    <select id="cut" class="button"></select>
-                    <select id="gender" class="button"></select>
+                    <select id="event" class="button" onclick="gtag('event_dropdown', 'button_click', { 'button_name': 'event' });">Events</select>
+                    <select id="cut" class="button" onclick="gtag('event_dropdown', 'button_click', { 'button_name': 'cut' });""></select>
+                    <select id="gender" class="button" onclick="gtag('event_dropdown', 'button_click', { 'button_name': 'gender' });""></select>
 
                 <table id="dataTable">
                     <thead>
