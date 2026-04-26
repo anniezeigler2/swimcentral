@@ -1,3 +1,17 @@
+const data = {
+    sections: [
+        {
+            uniqueID: "news",
+            title: "News",
+            
+        }
+    ]
+}
+
+
+
+
+
 const tableData = [
     //Division 1 Women
     { event: "50 Fr", time: "22.28", cut: "D1 A", gender: "Women" },
