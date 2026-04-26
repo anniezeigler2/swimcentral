@@ -82,14 +82,27 @@ body {
   font-size: 15px;
   cursor: pointer;
   width: 175px;
-  height: 25px;
-  border: none; 
-  padding: 15px; 
-  display: inline-block; 
-  line-height: 0px;
-  border-radius: 8px; 
+
+  /* FIX THESE */
+  height: auto;
+  padding: 10px 12px;
+  line-height: normal;
+
+  border: none;
+  border-radius: 8px;
 }
 
+select.button {
+  color: white;           
+  background-color: #194d91;
+  font-size: 15px;
+  appearance: none;        
+}
+
+option {
+  color: black;              
+  background: white;
+}
 
 /*Body Sections*/
 .news, .times, .championships {

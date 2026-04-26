@@ -3,6 +3,7 @@ const cutSelect = document.getElementById("cut");
 const genderSelect = document.getElementById("gender");
 const tableBody = document.querySelector("#dataTable tbody");
 
+
 // Populate dropdowns
 function populateDropdown(select, values, label) {
     select.innerHTML = `<option value="">All ${label}</option>`;
@@ -13,6 +14,7 @@ function populateDropdown(select, values, label) {
         select.appendChild(option);
     });
 }
+
 
 // Render table
 function renderTable(data) {
@@ -29,16 +31,19 @@ function renderTable(data) {
     });
 }
 
+
 // Filter data
 function filterData() {
     const event = eventSelect.value;
     const cut = cutSelect.value;
     const gender = genderSelect.value;
 
+
     if (!event && !cut && !gender) {
     tableBody.innerHTML = "";
     return;
     }
+
 
     const filtered = tableData.filter(item =>
         (event === "" || item.event === event) &&
@@ -46,8 +51,10 @@ function filterData() {
         (gender === "" || item.gender === gender)
     );
 
+
     renderTable(filtered);
 }
+
 
 // Init
 function init() {
@@ -57,11 +64,13 @@ function init() {
         "Events"
     );
 
+
     populateDropdown(
         cutSelect,
         [...new Set(tableData.map(d => d.cut))],
         "Cuts"
     );
+
 
     populateDropdown(
         genderSelect,
@@ -69,11 +78,15 @@ function init() {
         "Genders"
     );
 
+
     eventSelect.addEventListener("change", filterData);
     cutSelect.addEventListener("change", filterData);
     genderSelect.addEventListener("change", filterData);
 
+
     tableBody.innerHTML = "";
 }
 
+
 init();
+
